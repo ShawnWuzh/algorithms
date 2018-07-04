@@ -27,14 +27,13 @@ class KMP():
     def partial_match_table(self,pattern):
         table = [None] * len(pattern)
         table[0] = -1
-        i = -1   # i is the prefix end location 
+        i = -1   # i is the prefix length
         j = 0
         while(j < len(pattern) - 1):
             if(i == -1 or pattern[i] == pattern[j]):
                 i += 1
                 j += 1
                 table[j] = i
-
             else:
                 i = table[i]
         return table

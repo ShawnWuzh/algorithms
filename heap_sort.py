@@ -1,7 +1,5 @@
 # written by HighW
 # This is the source code for heap sort algorithm
-
-
 class HeapSort():
     def heapSort(self, A, n):
         '''

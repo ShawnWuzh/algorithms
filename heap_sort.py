@@ -33,6 +33,7 @@ class HeapSort():
         '''
         for i in range(n // 2 - 1, -1, -1):
             self.max_heapify(A,n,i)
+
 if __name__ == '__main__':
     sort = HeapSort()
     print(sort.heapSort([1,2,9,7,8,5,3,2],8))

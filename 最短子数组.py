@@ -10,3 +10,4 @@
 # written by HighW
 class Subsequence():
     def shortestSubsequence(self,A,n):
+        

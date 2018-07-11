@@ -11,7 +11,7 @@
 类似于查找这种类型的题，通常我们想根据一个指标值将元素划分成两个部分，比指标小的一部分，比指标大的一部分。类似于二分查找。
 '''
 # Written by HighW
-class Finder():
+class Finder:
     def findX(self,mat,n,m,x):
         i = 0
         j = m - 1

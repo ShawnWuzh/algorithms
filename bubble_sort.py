@@ -1,7 +1,7 @@
 # written by HighW
 # This is the source code fo bubble sort
 
-class BubbleSort():
+class BubbleSort:
     def bubbleSort(self, A, n):
         flag = 0 # use this flag to indicate if there is element change
         while(n):

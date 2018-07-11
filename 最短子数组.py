@@ -16,7 +16,7 @@
 一直进行这样的操作，我们就找到了无序区的结束位置。那么我们找到无序区的起始位置呢，我们从后往前进行逆序遍历，其他操作类似于前面。从而求解出答案。
 '''
 # written by HighW
-class Subsequence():
+class Subsequence:
     def shortestSubsequence(self,A,n):
         min = A[0]
         min_loc = 0

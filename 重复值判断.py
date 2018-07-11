@@ -11,7 +11,7 @@
 选择排序的空间复杂度为O(1),插入排序的空间复杂度为O(1)，快速排序的空间复杂度为O(1), 归并排序的空间复杂度为O(n)，堆排序的
 空间复杂度为O(1)。从空间复杂度上，我们已经可以排除掉归并排序了，然后考虑到时间复杂度，我们选用heapsort，选用快速排序会超时
 '''
-class Checker():
+class Checker:
 
     def checkDuplicate(self, a, n):
         # sorted = self.quickSort(A, n)

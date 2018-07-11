@@ -18,7 +18,7 @@
 这道题的亮点在于，我们不再建立一个和原始数据大小一样的heap， 而是建立一个更小的，size为K的heap了。
 '''
 
-class ScaleSort():
+class ScaleSort:
     def scaleSort(self, A, n, k):
         minHeap = self.buildMinHeap(A,k)
         i = k

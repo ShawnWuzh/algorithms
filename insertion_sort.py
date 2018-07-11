@@ -1,6 +1,6 @@
 # written by HighW
 # This is the source code for insertion sort
-class InsertionSort():
+class InsertionSort:
     def insertionSort(self, A, n):
         for i in range(1,n):
             current = A[i]

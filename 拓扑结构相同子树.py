@@ -33,7 +33,7 @@ import string
 
 
 
-class IdenticalTree():
+class IdenticalTree:
     def chkIdentical(self, A, B):
         str1 = []
         self.serialization(str1,A)

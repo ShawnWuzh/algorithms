@@ -17,7 +17,7 @@
 '''
 
 # written by HighW
-class ThreeColor():
+class ThreeColor:
     def sortThreeColor(self, A, n):
         last_zero = -1
         last_two = n

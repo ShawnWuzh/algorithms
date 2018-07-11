@@ -1,6 +1,6 @@
 # written by HighW
 # This is the source code for quick sort
-class QuickSort():
+class QuickSort:
     def quickSort(self, A, n):
         self.pivot_split(A,0, n-1)
         return A

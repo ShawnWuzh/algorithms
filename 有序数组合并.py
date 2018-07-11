@@ -7,7 +7,7 @@
 '''
 本题关键词： 从后往前进行比较
 '''
-class Merge():
+class Merge:
 
     def mergeAB(self,A,B,n,m):
         size = n + m

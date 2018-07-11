@@ -1,6 +1,6 @@
 # written by HighW
 # This is the source code for heap sort algorithm
-class HeapSort():
+class HeapSort:
     def heapSort(self, A, n):
         '''
         Every time, we swap the root with the last node, the last node is the current largest

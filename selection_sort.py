@@ -1,6 +1,6 @@
 # wwritten by HighW
 # This is the source code for selection sort
-class SelectionSort():
+class SelectionSort:
     def selectionSort(self,A,n):
         for i in range(n):
             min_loc = i

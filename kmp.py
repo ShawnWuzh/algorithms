@@ -2,7 +2,7 @@
 This is the source code for Knuth-Morris-Pratt algorithm for string match
 Written by HighW
 '''
-class KMP():
+class KMP:
     def __init__(self):
         self.text = None
         self.pattern = None

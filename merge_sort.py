@@ -1,6 +1,6 @@
 # written by HighW
 # This is the source code for merge sort
-class MergeSort():
+class MergeSort:
     def mergeSort(self, A, n):
         self.split_merge(A,0,n-1)
         return A

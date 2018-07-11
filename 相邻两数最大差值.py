@@ -15,7 +15,7 @@
 本题千万要注意Python2 和Python3 的区别： Python2： 3/2 = 1,Python3： 3/2=1.5
 '''
 # written by HighW
-class Gap():
+class Gap:
     def maxGap(self, A, n):
         min = A[0]
         max = A[0]

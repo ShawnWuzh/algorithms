@@ -9,4 +9,14 @@
 '''
 class TwoStacks:
     def twoStackSort(self, numbers):
-        
+        sort_stack = []
+        while(len(numbers)):
+            top = numbers.pop()
+            while(len(sort_stack) and top > sort_stack[-1]):
+                numbers.append(sort_stack.pop())
+            sort_stack.append(top)
+        return sort_stack
+if __name__ == '__main__':
+    numbers = [1,2,3,4,5]
+    twoStack = TwoStacks()
+    print(twoStack.twoStackSort(numbers))

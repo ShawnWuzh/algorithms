@@ -10,8 +10,6 @@ class ListNode:
     def __init__(self,x):
         self.val = x
         self.next = None
-
-
 class ChkIntersection:
     def chkInter(self, head1, head2, adjust0, adjust1):
         #先检查两个链表有不有环。
@@ -33,9 +31,6 @@ class ChkIntersection:
                         return True
                     curNode = curNode.next
                 return False
-
-
-
     def checkCircle(self,head):
         slowPointer = head
         fastPointer = head

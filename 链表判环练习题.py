@@ -37,3 +37,4 @@ class ChkLoop:
                     return fastPointer.val
                 slowPointer = slowPointer.next
                 fastPointer = fastPointer.next
+        

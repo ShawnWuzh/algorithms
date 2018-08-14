@@ -15,7 +15,6 @@ class Backpack:
         if remain <= 0:
             return 0
         return max(self.findMax(w,v,start+1,remain), v[start] + self.findMax(w,v,start+1, remain-w[start]))
-
     # 动态规划写法。
     def dpmaxValue(self,w,v,n,cap):
         dp = [[0 for i in range(cap+1)] for j in range(n)]
@@ -29,8 +28,6 @@ class Backpack:
                 else:
                     dp[i][j] = dp[i-1][j]
         return dp[n-1][cap]
-
-
 if __name__ == '__main__':
     w = [1,2,3]
     v = [1,2,3]

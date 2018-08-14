@@ -6,10 +6,62 @@
 测试样例：
 1
 返回：["down"]
-
+'''
+'''
+折完纸的结果其实就是一棵二叉树，而且就是一颗满二叉树，该二叉树的根节点是下折痕，然后每一棵子树
+的左结点是上折痕，右结点是下折痕。构建出这颗二叉树之后，然后按照右中左的顺序打印这颗二叉树，就是
+将折痕从上到下打印出来的结果。
 '''
 
-class FoldPaper:
 
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left = None
+        self.right = None
+
+class FoldPaper:
     def foldPaper(self, n):
-        
+        queue = []
+        root = TreeNode('down')
+        queue.append(root)
+        i = 2
+        while i <= n:
+            lastLevel = 2 ** ((i-1) - 1)
+            while lastLevel:
+                curNode = queue.pop(0)
+                curNode.left = TreeNode('up')
+                curNode.right = TreeNode('down')
+                queue.append(curNode.left)
+                queue.append(curNode.right)
+                lastLevel -= 1
+            i += 1
+        # result = []
+        # queue = []
+        # curNode = root
+        # queue.append(curNode)
+        # while(len(queue)):
+        #     curNode = queue.pop(0)
+        #     result.append(curNode.val)
+        #     if curNode.left:
+        #         queue.append(curNode.left)
+        #     if curNode.right:
+        #         queue.append(curNode.right)
+        stack = []
+        result = []
+        curNode = root
+        while curNode:
+            stack.append(curNode)
+            curNode = curNode.right
+        while(len(stack)):
+            curNode = stack.pop()
+            result.append(curNode.val)
+            leftNode = curNode.left
+            while leftNode:
+                stack.append(leftNode)
+                leftNode = leftNode.right
+        return result
+if __name__ == '__main__':
+    fold = FoldPaper()
+    n = 2
+    print(fold.foldPaper(n))
